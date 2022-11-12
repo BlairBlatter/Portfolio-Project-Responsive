@@ -9,8 +9,14 @@ body {
   font-family: var(--default-font-family);
 }
 
+h1 {
+  font-family: var(--heading-font-family);
+  font-size: 96px;
+}
+
 h2 {
   font-size: 64px;
+  font-family: var(--heading-font-family);
 }
 
 p {
@@ -34,11 +40,6 @@ img {
   margin: 0;
 }
 
-.hero h1 {
-  font-family: var(--heading-font-family);
-  font-size: 96px;
-}
-
 .hero h2 {
   font-family: var(--default-font-family);
   font-size: 24px;
@@ -56,7 +57,7 @@ img {
 }
 
 .project-info {
-  padding: 120px 60px;
+  padding: 120px 30px;
 }
 
 .btn-branding-outline {
@@ -66,4 +67,27 @@ img {
   font-size: 18px;
   line-height: 27px;
   padding: 15px, 30px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 46px;
+  }
+
+  .project-info {
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 28px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
 }
