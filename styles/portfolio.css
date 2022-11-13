@@ -23,6 +23,11 @@ p {
   font-size: 16px;
   line-height: 30px;
 }
+
+.gallery {
+  display: flex;
+}
+
 img {
   max-height: 500px;
 }
@@ -57,7 +62,18 @@ img {
 }
 
 .project-info {
-  padding: 120px 30px;
+  padding: 0;
+}
+
+.project-1,
+.project-2,
+.project-3 {
+  padding: 40px 120px;
+}
+
+.project-1,
+.project-3 {
+  background: var(--branding-color);
 }
 
 .btn-branding-outline {
